@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APISuite">
+    <listeners>
+        <listener class-name="com.api.test.utils.ExtentTestNGListener"/>
+    </listeners>
+    <test name="APITests">
+        <classes>
+            <class name="com.api.test.tests.HealthCheckTest"/>
+            <class name="com.api.test.tests.AccountsTests"/>
+            <class name="com.api.test.tests.BooksTest"/>
+            <class name="com.api.test.tests.NegativeBooksTest"/>
+        </classes>
+    </test>
+</suite>
